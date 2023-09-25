@@ -39,6 +39,7 @@ func main() {
 			fmt.Println("Guess number is bigger than answer")
 		} else if inputNumber == answer {
 			fmt.Println("Correct!")
+			break
 		} else {
 			fmt.Println("I think you input the wrong data")
 		}
