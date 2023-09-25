@@ -19,7 +19,7 @@ func main() {
 
 	fmt.Print("Input Score : ")
 	reader := bufio.NewReader(os.Stdin)
-	inputScore, err := reader.ReadString('\n') // 1 variable but reader.ReadString returns 2 values
-	fmt.Println(inputScore, err)
+	inputScore, _ := reader.ReadString('\n') // 1 variable but reader.ReadString returns 2 values
+	fmt.Println(inputScore)
 
 }
