@@ -6,10 +6,10 @@ func double(n *int) {
 	*n = *n * 2
 }
 
-func swap(n1 int, n2 int) {
-	temp := n1
-	n1 = n2
-	n2 = temp
+func swap(n1 *int, n2 *int) {
+	temp := *n1
+	*n1 = *n2
+	*n2 = temp
 }
 
 func main() {
@@ -19,9 +19,10 @@ func main() {
 
 	b := 10
 	c := &b
+	d := 20
 	fmt.Printf("%T\n", c)
 
-	swap(b, c)
-	fmt.Printf(b, c)
+	swap(&b, &d)
+	fmt.Println(b, d)
 
 }
