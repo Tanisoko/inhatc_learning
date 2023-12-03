@@ -34,6 +34,7 @@ func main() {
 	a[0] = "a"
 	a[2] = "c"
 	a[3] = "d"
+	// fmt.Println(a)
 	as := a[0:2]
 	as[1] = "x"
 	// c := append(a, "y")
